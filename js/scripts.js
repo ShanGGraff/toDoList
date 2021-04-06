@@ -17,8 +17,8 @@ ToDoList.prototype.addTask = function (name) {
   this.tasks.push(task)
 }
 
-ToDoList.prototype.removeTask = function (id) {
-  const newTasks = this.tasks.filter(task => task.id !== id)
+ToDoList.prototype.removeTask = function (specifiedId) {
+  const newTasks = this.tasks.filter(task => task.id !== specifiedId)
   this.tasks = newTasks
 }
 
